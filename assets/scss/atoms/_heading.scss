@@ -4,6 +4,7 @@
   font-weight: $font-bold;
   line-height: 1.2;
   color: var(--clr-main-text);
+  margin-bottom: $spacer-3;
 }
 
 .ca-subheading {
@@ -11,6 +12,7 @@
   line-height: 1.3;
   font-weight: $font-semi-bold;
   color: var(--clr-primary);
+  margin-bottom: $spacer-3;
 }
 
 @include mobile-tablet {
