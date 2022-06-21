@@ -1,0 +1,49 @@
+.ca-btn {
+  display: inline-block;
+  font-family: $font-quick;
+  font-size: 16px;
+  font-weight: $font-bold;
+  border: 1.5px solid transparent;
+  border-radius: 999px;
+  cursor: pointer;
+  user-select: none;
+  padding: 12px $spacer-6;
+  color: var(--clr-main-bg);
+  background-color: var(--clr-primary);
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: var(--clr-primary-dark);
+  }
+
+  &--shadow {
+    box-shadow: 0px 4px 8px rgba(55, 125, 255, 0.5);
+    &:hover {
+      box-shadow: 0px 4px 8px rgba(55, 125, 255, 0.251);
+    }
+  }
+
+  &--border {
+    border: 1.5px solid var(--clr-primary);
+    color: var(--clr-primary);
+    background-color: var(--clr-main-bg);
+    &:hover {
+      color: var(--clr-main-bg);
+      background-color: var(--clr-primary);
+    }
+  }
+
+  &--transparent {
+    color: var(--clr-primary);
+    background-color: transparent;
+    &:hover {
+      color: var(--clr-main-bg);
+      background-color: var(--clr-primary);
+    }
+  }
+}
+
+@include mobile-tablet {
+  .ca-btn {
+    font-size: 15px;
+  }
+}
