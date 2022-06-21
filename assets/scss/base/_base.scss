@@ -31,9 +31,10 @@ body {
   font-weight: $font-regular;
   line-height: 1.4;
   width: 100%;
-  min-height: 100%;
+  min-height: 100vh;
   color: var(--clr-body-text);
   background-color: var(--clr-main-bg);
+  transition: all 0.3s ease;
 }
 
 a,

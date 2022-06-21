@@ -1,0 +1,39 @@
+.ca-toggle {
+  position: absolute;
+  top: $spacer-4;
+  right: $spacer-4;
+
+  input {
+    display: none;
+  }
+  label {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 22px;
+    width: 38px;
+    border-radius: 30px;
+    background: rgb(255, 198, 0);
+    padding: $spacer-0 $spacer-1;
+    cursor: pointer;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: rgb(255, 255, 255);
+      transition: transform 0.3s ease;
+    }
+  }
+  input:checked + label {
+    background: rgb(42, 44, 52);
+  }
+  input:checked + label::after {
+    background: transparent;
+    transform: translateX(16px) rotate(210deg);
+    box-shadow: inset 6px 0px rgb(184, 128, 255),
+      inset 6px 0px 0px 0px rgb(184, 128, 255);
+  }
+}
