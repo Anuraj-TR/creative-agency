@@ -12,9 +12,12 @@
   &__card-wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    // justify-content: space-between;
+    flex-wrap: wrap;
     padding: 20px 0;
     margin-bottom: $spacer-4;
+    margin-left: -$spacer-2;
+    margin-right: -$spacer-2;
   }
   &__svgr {
     position: absolute;
@@ -25,6 +28,11 @@
     position: absolute;
     top: 50%;
     left: 36%;
+  }
+  .ca-portfolio_card{
+    width: calc(33.33% - $spacer-3);
+    margin-right: $spacer-2;
+    margin-left: $spacer-2;
   }
 }
 
@@ -38,8 +46,20 @@
       width: 100%;
     }
     &__card-wrapper {
-      flex-wrap: wrap;
+    margin-right: -$spacer-1;
+    margin-left: -$spacer-1;
     }
+    .ca-portfolio_card{
+    width: calc(50% - $spacer-2);
+    margin-right: $spacer-1;
+    margin-left: $spacer-1;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    &:hover {
+      transform: scale(1.03);
+      transition: 0.2s ease-in-out;
+    }
+  }
   }
 }
 @include mobile {
@@ -53,6 +73,19 @@
     }
     &__card-wrapper {
       flex-direction: column;
+      margin-right: 0;
+      margin-left: 0;
     }
+    .ca-portfolio_card{
+    width: calc(100% - $spacer-1);
+    margin-right:0;
+    margin-left: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    &:hover {
+      transform: scale(1.03);
+      transition: 0.2s ease-in-out;
+    }
+  }
   }
 }
