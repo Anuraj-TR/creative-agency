@@ -1,8 +1,6 @@
 const doc = document.querySelector("html");
 const toggle = document.querySelector("#theme");
 
-console.log(toggle);
-
 const loadTheme = () => {
   return window.matchMedia &&
     window.matchMedia("(prefers-color-scheme: dark)").matches &&
