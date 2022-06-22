@@ -20,6 +20,7 @@
   --clr-body-text: #e2e2e2;
   --clr-primary: #e2e2e2;
   --clr-primary-dark: #bdbdbd;
+  --clr-main-bg-dark: #0b0f15;
 }
 
 html {
@@ -31,7 +32,7 @@ body {
   font-family: $font-nunito;
   font-size: 18px;
   font-weight: $font-regular;
-  line-height: 1.7;
+  line-height: 1.4;
   width: 100%;
   min-height: 100vh;
   color: var(--clr-body-text);
@@ -117,7 +118,6 @@ button {
 @include mobile {
   body {
     font-size: 16px;
-    line-height: 1.5;
   }
   .content-wrapper {
     padding-left: $spacer-3;
