@@ -10,11 +10,12 @@
 // atoms
 @import "atoms/button";
 @import "atoms/heading";
-@import "atoms/portfolio-card";
-
+@import "atoms/toggle";
 // molecule
-@import "molecules/portfolio";
+@import "molecules/portfolio-card";
+@import "molecules/testimonial-card";
 
 // organisms
+@import "organisms/portfolio";
 
 // pages
