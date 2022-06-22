@@ -10,6 +10,8 @@
   --clr-accent-green: #7ce761;
   --clr-accent-yellow: #ffa800;
   --clr-footer-bg: #383638;
+  --clr-white: #ffffff;
+  --clr-black: #ffffff;
 }
 
 :root.dark {
@@ -27,13 +29,14 @@ html {
 html,
 body {
   font-family: $font-nunito;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: $font-regular;
-  line-height: 1.4;
+  line-height: 1.7;
   width: 100%;
-  min-height: 100%;
+  min-height: 100vh;
   color: var(--clr-body-text);
   background-color: var(--clr-main-bg);
+  transition: all 0.3s ease;
 }
 
 a,
@@ -59,6 +62,11 @@ button {
 
 *:focus {
   outline: none;
+}
+
+.ca-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .content-wrapper {
@@ -87,6 +95,11 @@ button {
 }
 
 @include mobile-tablet {
+  .ca-section {
+    padding-top: $spacer-6;
+    padding-bottom: $spacer-6;
+  }
+
   .content-wrapper {
     padding-left: $spacer-5;
     padding-right: $spacer-5;
@@ -102,6 +115,10 @@ button {
 }
 
 @include mobile {
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+  }
   .content-wrapper {
     padding-left: $spacer-3;
     padding-right: $spacer-3;

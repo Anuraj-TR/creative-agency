@@ -1,6 +1,5 @@
 const doc = document.querySelector("html");
-const toggle = document.querySelector("[data-toggle]");
-const toggleIndicator = document.querySelector("[data-toggle-pointer]");
+const toggle = document.querySelector("#theme");
 
 const loadTheme = () => {
   return window.matchMedia &&
@@ -12,25 +11,22 @@ const loadTheme = () => {
     : "light";
 };
 
-const setToggleIndicator = (theme) => {
-  theme === "dark"
-    ? toggleIndicator?.toggleIndicator.classList.add("dark")
-    : toggleIndicator?.toggleIndicator.classList.remove("dark");
-};
-
 const setTheme = (theme) => {
   localStorage.setItem("theme", theme);
   doc.setAttribute("data-theme", theme);
   doc.classList.remove(...doc.classList);
   doc.classList.add(theme);
-  setToggleIndicator(theme);
+  if (typeof toggle !== "undefined" && toggle !== null) {
+    theme === "dark" ? (toggle.checked = true) : (toggle.checked = false);
+  }
 };
 
-toggle?.toggle.addEventListener("click", () => {
-  doc.getAttribute("data-theme") === "dark"
-    ? setTheme("light")
-    : setTheme("dark");
-});
+toggle &&
+  toggle.addEventListener("click", () => {
+    doc.getAttribute("data-theme") === "dark"
+      ? setTheme("light")
+      : setTheme("dark");
+  });
 
 window
   .matchMedia("(prefers-color-scheme: dark)")
