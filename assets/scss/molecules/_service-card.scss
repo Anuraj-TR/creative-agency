@@ -1,0 +1,43 @@
+.ca-service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  padding: $spacer-5;
+  transition: all 0.3s ease;
+  &:hover {
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.1);
+    background-color: var(--clr-main-bg-dark);
+  }
+
+  &__imgsec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: var(--color);
+    margin-bottom: $spacer-4;
+  }
+  svg {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    & path {
+      stroke: var(--clr-main-bg);
+    }
+  }
+  &__title {
+    font-family: $font-quick;
+    font-weight: $font-bold;
+    max-width: 150px;
+    color: var(--clr-main-text);
+  }
+}
