@@ -11,13 +11,16 @@
 @import "atoms/toggle";
 @import "atoms/button";
 @import "atoms/heading";
+@import "atoms/toggle";
 
 // molecule
 @import "molecules/portfolio-card";
 @import "molecules/service-card";
+@import "molecules/testimonial-card";
 
 // organisms
-@import "organisms/portfolio";
 @import "organisms/our-services";
+@import "organisms/portfolio";
+@import "organisms/testimonial";
 
 // pages

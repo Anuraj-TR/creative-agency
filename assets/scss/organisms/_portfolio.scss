@@ -1,5 +1,4 @@
 .ca-portfolio {
-  position: relative;
   text-align: center;
   &__text-wrapper {
     width: 100%;
@@ -10,21 +9,45 @@
     width: 50%;
   }
   &__card-wrapper {
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
     padding: 20px 0;
     margin-bottom: $spacer-4;
-  }
-  &__svgr {
-    position: absolute;
-    top: 20%;
-    right: 0;
-  }
-  &__svgl {
-    position: absolute;
-    top: 50%;
-    left: 36%;
+    margin-left: -$spacer-3;
+    margin-right: -$spacer-3;
+    &::after {
+      content: "";
+      width: 100px;
+      height: 80px;
+      position: absolute;
+      background-image: url('/assets/images/pink-dots.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: -25%;
+      right: 0;
+    }
+    &::before {
+      content: "";
+      width: 100px;
+      height: 80px;
+      position: absolute;
+      background-image: url('/assets/images/pink-dots.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 25%;
+      left: 32.5%;
+    }
+    .ca-portfolio_card{
+      width: calc(33.33% - $spacer-5);
+      margin-right: $spacer-3;
+      margin-left: $spacer-3;
+    }
   }
 }
 
@@ -38,7 +61,25 @@
       width: 100%;
     }
     &__card-wrapper {
-      flex-wrap: wrap;
+    margin-right: -$spacer-2;
+    margin-left: -$spacer-2;
+      .ca-portfolio_card{
+        width: calc(50% - $spacer-3);
+        margin-right: $spacer-2;
+        margin-left: $spacer-2;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        &:hover {
+          transform: scale(1.03);
+          transition: 0.2s ease-in-out;
+        }
+      }
+      &::after {
+        display: none;
+      }
+      &::before {
+        display: none;
+      }
     }
   }
 }
@@ -53,6 +94,26 @@
     }
     &__card-wrapper {
       flex-direction: column;
+      margin-right: 0;
+      margin-left: 0;
+      
+      &::after {
+        display: none;
+      }
+      &::before {
+        display: none;
+      }
+      .ca-portfolio_card{
+      width: calc(100% - $spacer-2);
+      margin-right:0;
+      margin-left: 0;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      &:hover {
+        transform: scale(1.03);
+        transition: 0.2s ease-in-out;
+      }
+    }
     }
   }
 }
