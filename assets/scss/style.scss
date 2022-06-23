@@ -8,16 +8,20 @@
 @import "base/dev";
 
 // atoms
-// @import "atoms/toggle";
 @import "atoms/button";
 @import "atoms/heading";
+@import "atoms/toggle";
 
 // molecule
 @import "molecules/portfolio-card";
+@import "molecules/service-card";
+@import "molecules/testimonial-card";
 
 // organisms
+@import "organisms/our-services";
 @import "organisms/teammates";
 @import "organisms/portfolio";
 @import "organisms/collaboration";
+@import "organisms/testimonial";
 
 // pages
