@@ -530,7 +530,7 @@ button {
   min-height: 300px;
   box-shadow: 0px 8px 24px var(--clr-testimonial-card-shadow);
   border-radius: 20px;
-  background-color: var(--clr-main-bg-dark);
+  background-color: var(--clr-main-bg);
 }
 .ca-testimonial__card__profile {
   width: 100%;
@@ -777,7 +777,7 @@ button {
   z-index: 9;
   content: "";
   position: absolute;
-  background-image: url(/assets/images/orange-dot.svg);
+  background-image: url("../images/orange-dot.svg");
   background-repeat: no-repeat;
   left: -26px;
   top: -20px;
@@ -790,7 +790,7 @@ button {
   z-index: 9;
   content: "";
   position: absolute;
-  background-image: url(/assets/images/violet-dot.svg);
+  background-image: url("../images/violet-dot.svg");
   background-repeat: no-repeat;
   right: -36px;
   bottom: -15px;
@@ -855,7 +855,7 @@ button {
     z-index: 9;
     content: "";
     position: absolute;
-    background-image: url(/assets/images/violet-dot.svg);
+    background-image: url("../images/violet-dot.svg");
     left: 5px;
     top: -14px;
     width: 100%;
@@ -897,7 +897,7 @@ button {
   width: 100px;
   height: 80px;
   position: absolute;
-  background-image: url("/assets/images/pink-dots.svg");
+  background-image: url("../images/pink-dots.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -910,7 +910,7 @@ button {
   width: 100px;
   height: 80px;
   position: absolute;
-  background-image: url("/assets/images/pink-dots.svg");
+  background-image: url("../images/pink-dots.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1018,7 +1018,7 @@ button {
   z-index: 9;
   content: "";
   position: absolute;
-  background-image: url(/assets/images/blue-dots.svg);
+  background-image: url("../images/blue-dots.svg");
   background-repeat: no-repeat;
   left: -18px;
   top: 40px;
@@ -1031,7 +1031,7 @@ button {
   z-index: 9;
   content: "";
   position: absolute;
-  background-image: url(/assets/images/orange-dots-L.svg);
+  background-image: url("../images/orange-dots-L.svg");
   background-repeat: no-repeat;
   right: 140px;
   bottom: 4px;
@@ -1109,7 +1109,7 @@ button {
   width: 100px;
   height: 80px;
   position: absolute;
-  background-image: url("/assets/images/pink-dots.svg");
+  background-image: url("../images/pink-dots.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1122,7 +1122,7 @@ button {
   width: 100px;
   height: 80px;
   position: absolute;
-  background-image: url("/assets/images/pink-dots.svg");
+  background-image: url("../images/pink-dots.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;

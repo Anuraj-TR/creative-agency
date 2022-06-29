@@ -20,12 +20,11 @@ const setTheme = (theme) => {
   if (typeof toggle !== "undefined" && toggle !== null) {
     theme === "dark" ? (toggle.checked = true) : (toggle.checked = false);
   }
-
   img.setAttribute(
     "src",
     theme === "dark"
-      ? "../assets/images/creative-agency-dark.svg"
-      : "../assets/images/creative-agency-light.svg"
+      ? "./assets/images/creative-agency-dark.svg"
+      : "./assets/images/creative-agency-light.svg"
   );
 };
 
