@@ -22,7 +22,7 @@
       width: 100px;
       height: 80px;
       position: absolute;
-      background-image: url('/assets/images/pink-dots.svg');
+      background-image: url("../images/pink-dots.svg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
@@ -35,7 +35,7 @@
       width: 100px;
       height: 80px;
       position: absolute;
-      background-image: url('/assets/images/pink-dots.svg');
+      background-image: url("../images/pink-dots.svg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
@@ -43,7 +43,7 @@
       top: 25%;
       left: 32.5%;
     }
-    .ca-portfolio_card{
+    .ca-portfolio_card {
       width: calc(33.33% - $spacer-5);
       margin-right: $spacer-3;
       margin-left: $spacer-3;
@@ -61,9 +61,9 @@
       width: 100%;
     }
     &__card-wrapper {
-    margin-right: -$spacer-2;
-    margin-left: -$spacer-2;
-      .ca-portfolio_card{
+      margin-right: -$spacer-2;
+      margin-left: -$spacer-2;
+      .ca-portfolio_card {
         width: calc(50% - $spacer-3);
         margin-right: $spacer-2;
         margin-left: $spacer-2;
@@ -96,24 +96,24 @@
       flex-direction: column;
       margin-right: 0;
       margin-left: 0;
-      
+
       &::after {
         display: none;
       }
       &::before {
         display: none;
       }
-      .ca-portfolio_card{
-      width: calc(100% - $spacer-2);
-      margin-right:0;
-      margin-left: 0;
-      margin-bottom: 10px;
-      margin-top: 10px;
-      &:hover {
-        transform: scale(1.03);
-        transition: 0.2s ease-in-out;
+      .ca-portfolio_card {
+        width: calc(100% - $spacer-2);
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        &:hover {
+          transform: scale(1.03);
+          transition: 0.2s ease-in-out;
+        }
       }
-    }
     }
   }
 }

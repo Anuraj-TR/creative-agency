@@ -23,7 +23,7 @@
         z-index: 9;
         content: "";
         position: absolute;
-        background-image: url(/assets/images/orange-dot.svg);
+        background-image: url("../images/orange-dot.svg");
         background-repeat: no-repeat;
         left: -26px;
         top: -20px;
@@ -36,7 +36,7 @@
         z-index: 9;
         content: "";
         position: absolute;
-        background-image: url(/assets/images/violet-dot.svg);
+        background-image: url("../images/violet-dot.svg");
         background-repeat: no-repeat;
         right: -36px;
         bottom: -15px;
@@ -108,7 +108,7 @@
           z-index: 9;
           content: "";
           position: absolute;
-          background-image: url(/assets/images/violet-dot.svg);
+          background-image: url("../images/violet-dot.svg");
           left: 5px;
           top: -14px;
           width: 100%;
