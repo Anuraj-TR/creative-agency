@@ -1,0 +1,107 @@
+.ca-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: transparent;
+  transition: all 0.3s ease;
+  z-index: 9999;
+  &--scrolled {
+    background: var(--clr-main-bg);
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: $spacer-3;
+    padding-bottom: $spacer-3;
+  }
+  &__left,
+  &__right {
+    flex: 1;
+  }
+  &__left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &__right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &__logo-link {
+    display: inline-block;
+    width: 164px;
+    height: 50px;
+  }
+  &__logo {
+    width: 100%;
+    height: 100%;
+  }
+  &__nav {
+    margin-right: $spacer-5;
+  }
+  &__nav-links {
+    display: flex;
+    align-items: center;
+    margin-right: (-$spacer-4);
+    margin-left: (-$spacer-4);
+  }
+  &__nav-link a {
+    display: inline-block;
+    color: var(--clr-dark);
+    padding: $spacer-2;
+    margin-right: $spacer-4;
+    margin-left: $spacer-4;
+    transition: color 0.3s ease;
+    &:hover {
+      color: var(--clr-primary);
+    }
+  }
+  &__hamburger {
+    display: none;
+  }
+}
+
+@include mobile-tablet {
+  .ca-header {
+    &__logo-link {
+      display: inline-block;
+      width: 120px;
+      height: 40px;
+    }
+    &__hamburger {
+      position: relative;
+      display: block;
+      z-index: 999;
+      margin-left: $spacer-2;
+    }
+    &__hamburger-icon {
+      width: 26px;
+      height: 26px;
+    }
+    &__hamburger svg path {
+      stroke: var(--clr-primary);
+    }
+    &__nav {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100vw);
+      width: 100%;
+      background: var(--clr-main-bg);
+      padding-top: $spacer-4;
+      padding-bottom: $spacer-4;
+      margin-right: $spacer-0;
+      &--show {
+        transform: translateX(0vw);
+      }
+    }
+    &__nav-links {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
